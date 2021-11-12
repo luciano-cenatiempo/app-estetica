@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+form .form-content {
+  display: flex;
+  flex-direction: column; }
+
+h1, form .form-content, form .form-content input, form .form-content .btn-agregar {
+  font-family: 'Ubuntu', sans-serif; }
+
+form .form-content .mensaje-error, form .form-content .mensaje-success {
+  border-radius: 10px;
+  color: #fff;
+  width: 50%;
+  margin-top: 10px;
+  align-self: center;
+  padding: 10px;
+  text-align: center; }
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url("../img/background-pink.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center; }
+
+h1 {
+  color: #181313;
+  padding: 10px 20px; }
+
+form .form-content {
+  background: rgba(247, 132, 199, 0.7);
+  margin: auto;
+  width: 90%;
+  min-height: 300px;
+  padding: 10px 15px;
+  border-radius: 15px; }
+  form .form-content label {
+    padding-top: 10px;
+    font-size: 1.5em; }
+  form .form-content input {
+    font-size: 20px;
+    padding: 5px;
+    background: rgba(212, 211, 212, 0.5); }
+  form .form-content .btn-agregar {
+    margin-top: 20px;
+    width: 60%;
+    align-self: center;
+    color: #fff;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: #f18d65; }
+  form .form-content .mensaje-error {
+    background-color: rgba(240, 26, 26, 0.5); }
+  form .form-content .mensaje-success {
+    background-color: rgba(76, 240, 26, 0.5); }
+  form .form-content .hide {
+    display: none; }
+
+/*# sourceMappingURL=main.css.map */

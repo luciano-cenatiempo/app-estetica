@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+$bg-pink: rgb(241, 141, 101);
+$black: rgb(24, 19, 19);
+$secondary-color: rgba(247, 132, 199, 0.7);
+$white: #fff;
+$grey:rgba(212, 211, 212, 0.5);
+$btn-success:rgba(121, 11, 211, 0.7);
+$msj-error: rgba(240, 26, 26, 0.5);
+$msj-success: rgba(76, 240, 26, 0.5);
+%flex-column{
+    display: flex;
+    flex-direction: column;
+}
+%font-ubuntu{
+    font-family: 'Ubuntu', sans-serif;
+    
+}
+
+%div-mensaje{
+    border-radius: 10px;
+    color: $white;
+    width: 50%;
+    margin-top: 10px;
+    align-self: center;
+    padding: 10px;
+    text-align: center;
+}
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: url('../img/background-pink.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    
+}
+
+h1{
+    color: $black;
+    @extend %font-ubuntu;
+    padding:10px 20px;
+}
+
+form{
+
+    .form-content{
+        @extend %flex-column;
+        @extend %font-ubuntu;
+        background: $secondary-color;
+        margin: auto;
+        width: 90%;
+        min-height: 300px;
+        padding: 10px 15px;
+        border-radius: 15px ;
+    
+        label{
+            padding-top: 10px;
+            font-size: 1.5em;
+        }
+        input{
+            @extend %font-ubuntu;
+            font-size: 20px;
+            padding: 5px;
+            background: $grey;
+        }
+        .btn-agregar{
+            @extend %font-ubuntu;
+            margin-top: 20px;
+            width: 60%;
+            align-self: center;
+            color:$white;
+            border: 2px solid black;
+            border-radius: 5px;
+            background: $bg-pink;
+        }
+        .mensaje-error{
+            @extend %div-mensaje;
+            background-color: $msj-error;
+        }
+
+        .mensaje-success{
+            @extend %div-mensaje;
+            background-color: $msj-success;
+        }
+        
+        .hide{
+            display: none;
+        }
+
+    }
+}
